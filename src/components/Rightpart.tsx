@@ -5,7 +5,7 @@ function Rightpart() {
   return (
     <div className="arlo_tm_rightpart">
       <div className="rightpart_inner">
-=         <HomeCV />
+         <HomeCV />
 
         {/* <!-- ABOUT --> */}
           <About />

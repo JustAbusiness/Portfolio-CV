@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 	
 	jQuery(window).load('body', function(){
 		setTimeout(function(){
-        jQuery('.arlo_tm_preloader').addclassName('loaded');
+        jQuery('.arlo_tm_preloader').addClass('loaded');
     }, 1000);
 	});
 	
@@ -73,16 +73,16 @@ function arlo_tm_imgtosvg(){
 	jQuery('img.svg').each(function(){
 		
 		var jQueryimg 		= jQuery(this);
-		var imgclassName		= jQueryimg.attr('className');
+		var imgClass		= jQueryimg.attr('class');
 		var imgURL			= jQueryimg.attr('src');
 
 		jQuery.get(imgURL, function(data) {
 			// Get the SVG tag, ignore the rest
 			var jQuerysvg = jQuery(data).find('svg');
 
-			// Add replaced image's classNamees to the new SVG
-			if(typeof imgclassName !== 'undefined') {
-				jQuerysvg = jQuerysvg.attr('className', imgclassName+' replaced-svg');
+			// Add replaced image's classes to the new SVG
+			if(typeof imgClass !== 'undefined') {
+				jQuerysvg = jQuerysvg.attr('class', imgClass+' replaced-svg');
 			}
 
 			// Remove any invalid XML tags as per http://validator.w3.org
@@ -109,11 +109,11 @@ function arlo_tm_responsive(){
 	var WW					= jQuery(window).width();
 	
 	if(WW<1040){
-		leftpart.addclassName('hide');
-		rightpart.addclassName('full');
+		leftpart.addClass('hide');
+		rightpart.addClass('full');
 	}else{
-		leftpart.removeclassName('hide');
-		rightpart.removeclassName('full');
+		leftpart.removeClass('hide');
+		rightpart.removeClass('full');
 	}
 }
 
@@ -147,7 +147,7 @@ function arlo_tm_magnific_popup(){
 			  enabled:true
 			},
 			removalDelay: 300,
-			mainclassName: 'mfp-fade'
+			mainClass: 'mfp-fade'
 		});
 		
 	});
@@ -156,7 +156,7 @@ function arlo_tm_magnific_popup(){
 			//type: 'iframe',
 			disableOn: 700,
 			type: 'iframe',
-			mainclassName: 'mfp-fade',
+			mainClass: 'mfp-fade',
 			removalDelay: 160,
 			preloader: false,
 			fixedContentPos: false
@@ -200,7 +200,7 @@ function arlo_tm_list_height(){
 	var div			= jQuery('.about_short_contact_wrap');
 	var list		= div.find('li:nth-of-type(2n)');
 	
-	list.after("<div className='clearfix'></div>");
+	list.after("<div class='clearfix'></div>");
 }
 
 
@@ -235,10 +235,10 @@ function arlo_tm_portfolio(){
 				return false;
 			});	
 
-			// Change active element className
+			// Change active element class
 			filter.find('a').on('click', function() {
-				filter.find('a').removeclassName('current');
-				jQuery(this).addclassName('current');
+				filter.find('a').removeClass('current');
+				jQuery(this).addClass('current');
 				return false;
 			});	
 		}
@@ -252,8 +252,8 @@ function arlo_tm_projects() {
 	jQuery('.arlo_tm_portfolio_animation_wrap').each(function() {
 		jQuery(this).on('mouseenter', function() {
 			if (jQuery(this).data('title')) {
-				jQuery('.arlo_tm_portfolio_titles').html(jQuery(this).data('title') + '<span className="work__cat">' + jQuery(this).data('category') + '</span>');
-				jQuery('.arlo_tm_portfolio_titles').addclassName('visible');
+				jQuery('.arlo_tm_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
+				jQuery('.arlo_tm_portfolio_titles').addClass('visible');
 			}
 
 			jQuery(document).on('mousemove', function(e) {
@@ -263,7 +263,7 @@ function arlo_tm_projects() {
 				});
 			});
 		}).on('mouseleave', function() {
-			jQuery('.arlo_tm_portfolio_titles').removeclassName('visible');
+			jQuery('.arlo_tm_portfolio_titles').removeClass('visible');
 		});
 	});
 }
@@ -326,7 +326,7 @@ function arlo_tm_contact_form(){
 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
 				}else{
-					jQuery(".contact_form .returnmessage").append("<span className='contact_success'>"+ success +"</span>");
+					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
 				}
 				
@@ -413,7 +413,7 @@ function tdProgress(container){
 		var pBarWrap 		= progress.find('.arlo_tm_bar_wrap');
 		var pBar 			= progress.find('.arlo_tm_bar');
 		pBar.css({width:pValue+'%', backgroundColor:pColor});
-		setTimeout(function(){pBarWrap.addclassName('open');},(i*500));
+		setTimeout(function(){pBarWrap.addClass('open');},(i*500));
 	});
 }
 jQuery('.arlo_tm_progress_wrap').each(function() {
@@ -495,9 +495,9 @@ function arlo_tm_totop_myhide(){
 		var topOffSet 	=toTop.offset().top;
 		
 		if(topOffSet > 1000){
-			toTop.addclassName('opened');	
+			toTop.addClass('opened');	
 		}else{
-			toTop.removeclassName('opened');
+			toTop.removeClass('opened');
 		}
 	}
 }
@@ -509,14 +509,14 @@ function arlo_tm_animate_text(){
 	
 	"use strict";
 	
-	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
+	// var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
-		animateSpan.typed({
-			strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
-			loop: true,
-			startDelay: 1e3,
-			backDelay: 2e3
-		});
+		// animateSpan.typed({
+		// 	strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
+		// 	loop: true,
+		// 	startDelay: 1e3,
+		// 	backDelay: 2e3
+		// });
 }
 
 // -----------------------------------------------------
@@ -541,7 +541,7 @@ function arlo_tm_popup_blog(){
 		
 		mainImage.css({backgroundImage: 'url('+imgData+')'});
 		button.on('click',function(){
-			popupBox.addclassName('opened');
+			popupBox.addClass('opened');
 			popupInner.html(html);
 			mainImage = popupInner.find('.news_image');
 			mainImage.css({backgroundImage: 'url('+imgData+')'});
@@ -551,7 +551,7 @@ function arlo_tm_popup_blog(){
 		});
 	});
 	closePopup.on('click',function(){
-		popupBox.removeclassName('opened');
+		popupBox.removeClass('opened');
 		popupInner.html('');
 		return false;
 	});
@@ -646,16 +646,16 @@ function arlo_tm_switcher(){
 	var rightPart					= jQuery('.arlo_tm_rightpart');
 	
 	switcherOpener.on('click',function(){
-		if(switcherOpener.hasclassName('opened')){
-			switcherOpener.removeclassName('opened');
-			switcherIcon.removeclassName('opened');
-			leftPart.removeclassName('opened');
-			rightPart.removeclassName('opened');
+		if(switcherOpener.hasClass('opened')){
+			switcherOpener.removeClass('opened');
+			switcherIcon.removeClass('opened');
+			leftPart.removeClass('opened');
+			rightPart.removeClass('opened');
 		}else{
-			switcherOpener.addclassName('opened');
-			switcherIcon.addclassName('opened');
-			leftPart.addclassName('opened');
-			rightPart.addclassName('opened');
+			switcherOpener.addClass('opened');
+			switcherIcon.addClass('opened');
+			leftPart.addClass('opened');
+			rightPart.addClass('opened');
 		}
 		setTimeout(function(){jQuery('#ripple').ripples('updateSize');},101);
 		setTimeout(function(){jQuery('#ripple').ripples('updateSize');},201);
@@ -685,8 +685,8 @@ jQuery('.arlo_tm_counter').each(function() {
 	el.waypoint({
 		handler: function(){
 
-			if(!el.hasclassName('stop')){
-				el.addclassName('stop').countTo({
+			if(!el.hasClass('stop')){
+				el.addClass('stop').countTo({
 					refreshInterval: 50,
 					formatter: function (value, options) {
 						return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
@@ -745,11 +745,11 @@ function arlo_tm_hamburger(){
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
 		
-		if(element.hasclassName('is-active')){
-			element.removeclassName('is-active');
+		if(element.hasClass('is-active')){
+			element.removeClass('is-active');
 			mobileMenu.slideUp();
 		}else{
-			element.addclassName('is-active');
+			element.addClass('is-active');
 			mobileMenu.slideDown();
 		}
 		return false;
