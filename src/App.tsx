@@ -1,6 +1,6 @@
-import Portfolio from "./screens/Portfolio";
-import './style/style.scss'
-import './style/plugin.scss'
+import Portfolio from "@/screens/Portfolio";
+import '@/styles/style.scss'
+import '@/styles/plugin.scss'
 
 function App() {
   return (

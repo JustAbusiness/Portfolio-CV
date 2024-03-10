@@ -12,7 +12,7 @@ function HomeCV() {
           <div className="content hero">
             <div className="inner_content">
               <div className="image_wrap">
-                <img src="../../../public/random.jpg" alt="hero" />
+                <img src="@/../../public/random.jpg" alt="hero" />
               </div>
               <div className="name_holder">
                 <h3>
