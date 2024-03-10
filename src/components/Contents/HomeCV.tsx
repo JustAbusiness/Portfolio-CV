@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import Avatar from '@/assets/img/random.jpg'
 
 function HomeCV() {
   return (
@@ -12,7 +13,7 @@ function HomeCV() {
           <div className="content hero">
             <div className="inner_content">
               <div className="image_wrap">
-                <img src="@/../../public/random.jpg" alt="hero" />
+                <img src={Avatar} alt="hero" />
               </div>
               <div className="name_holder">
                 <h3>

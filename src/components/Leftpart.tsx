@@ -1,4 +1,4 @@
-
+import desktopLogo from '@/assets/img/about/huy.jpeg'
 
 function Leftpart() {
   return (
@@ -6,7 +6,7 @@ function Leftpart() {
       <div className="leftpart_inner">
         <div className="logo_wrap">
           <a href="#">
-            <img src="img/logo/desktop-logo.png" alt="desktop-logo" />
+            <img src={desktopLogo} alt="desktop-logo" style={{width: '200px', height: '200px', borderRadius: '50%'}}  />
           </a>
         </div>
         <div className="menu_list_wrap">
@@ -18,16 +18,10 @@ function Leftpart() {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services">Projects</a>
             </li>
             <li>
               <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#news">News</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

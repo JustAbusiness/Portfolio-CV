@@ -1,5 +1,11 @@
 import About from "./Contents/About";
 import HomeCV from "./Contents/HomeCV";
+import CameraDiaphragm from '@/assets/img/svg/camera-diaphragm.svg'
+import NewTab from '@/assets/img/svg/new-tab.svg'
+import Layer from '@/assets/img/svg/share.svg'
+import Share from '@/assets/img/svg/share.svg'
+import AdobeIllustrate from '@/assets/img/svg/adobe-illustrator.svg'
+import SeoPerformanceGraphic from '@/assets/img/svg/seo-performance-marketing-graphic.svg'
 
 function Rightpart() {
   return (
@@ -140,7 +146,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/camera-diaphragm.svg"
+                          src={CameraDiaphragm}
                           alt="camera-diaphragm"
                         />
                       </div>
@@ -161,7 +167,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/new-tab.svg"
+                          src={NewTab}
                           alt="new-tab"
                         />
                       </div>
@@ -182,7 +188,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/layers.svg"
+                          src={Layer}
                           alt="layers"
                         />
                       </div>
@@ -203,7 +209,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/share.svg"
+                          src={Share}
                           alt="share"
                         />
                       </div>
@@ -224,7 +230,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/adobe-illustrator.svg"
+                          src={AdobeIllustrate}
                           alt="adobe-illustrator"
                         />
                       </div>
@@ -245,7 +251,7 @@ function Rightpart() {
                       <div className="icon">
                         <img
                           className="svg"
-                          src="img/svg/seo-performance-marketing-graphic.svg"
+                          src={SeoPerformanceGraphic}
                           alt="seo-performance-marketing-graphic"
                         />
                       </div>
@@ -310,10 +316,10 @@ function Rightpart() {
                         data-category="Design"
                       >
                         <a href="portfolio-single.html">
-                          <img src="img/portfolio/600x600.jpg" alt="600x600" />
+                          <img src="../assetsimg/portfolio/600x600.jpg" alt="600x600" />
                           <div
                             className="arlo_tm_portfolio_image_main"
-                            data-img-url="img/portfolio/1.jpg"
+                            data-img-url="../assets/img/portfolio/1.jpg"
                           ></div>
                         </a>
                       </div>
