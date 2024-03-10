@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import Avatar from '@/assets/img/random.jpg'
+import Avatar from "@/assets/img/random.jpg";
 
 function HomeCV() {
   return (
@@ -17,7 +17,7 @@ function HomeCV() {
               </div>
               <div className="name_holder">
                 <h3>
-                   <span>PHAM NGOC HUY</span> - (ROBERT)
+                  <span>PHAM NGOC HUY</span> - (ROBERT)
                 </h3>
               </div>
               <div className="text_typing">
@@ -42,7 +42,22 @@ function HomeCV() {
           </div>
           <div className="arlo_tm_arrow_wrap bounce anchor">
             <a href="#about">
-              <i className="xcon-angle-double-down"></i>
+              {/* <i className="xcon-angle-double-down"></i> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={4}
+                stroke="currentColor"
+                className="w-6 h-6"
+                style={{ width: "24px", height: "24px" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
+                />
+              </svg>
             </a>
           </div>
         </div>

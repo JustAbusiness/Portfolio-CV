@@ -18,7 +18,7 @@ function Rightpart() {
         {/* <!-- /ABOUT -->
     
     <!-- SKILLS --> */}
-        <div className="arlo_tm_section">
+        <div className="arlo_tm_section" id="skills">
           <div className="arlo_tm_skills_wrap">
             <div className="container">
               <div className="inner_wrap">
