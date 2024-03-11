@@ -18,6 +18,9 @@ function Leftpart() {
               <a href="#about">About</a>
             </li>
             <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
               <a href="#services">Projects</a>
             </li>
             <li>
