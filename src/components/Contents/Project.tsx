@@ -1,19 +1,19 @@
 import { Button, Modal } from "antd";
 import { useState } from "react";
 function Project() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
+  // const showModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
+  // const handleOk = () => {
+  //   setIsModalOpen(false);
+  // };
 
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+  // const handleCancel = () => {
+  //   setIsModalOpen(false);
+  // };
 
   const dataProjects = [
     {
@@ -80,7 +80,7 @@ function Project() {
         <div className="container">
           <div className="arlo_tm_title_holder">
             <h3>Projects</h3>
-            <span>Meet our amazing services</span>
+            <span>Meet my amazing project</span>
           </div>
           <div className="list_wrap">
             <ul>
