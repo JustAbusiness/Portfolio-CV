@@ -28,7 +28,7 @@ function HomeCV() {
                       sequence={[
                         "Web Developer",
                         2000,
-                        "Cloud Development",
+                        "UI/UX Designer",
                         2000,
                       ]}
                       wrapper="span"

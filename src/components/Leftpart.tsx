@@ -23,9 +23,6 @@ function Leftpart() {
             <li>
               <a href="#services">Projects</a>
             </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
           </ul>
         </div>
         <div className="leftpart_bottom">
