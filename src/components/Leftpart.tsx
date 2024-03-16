@@ -21,7 +21,7 @@ function Leftpart() {
               <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#services">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </div>

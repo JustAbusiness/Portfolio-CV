@@ -5,125 +5,25 @@ function Skills() {
     <div className="arlo_tm_section" id="skills">
       <div className="arlo_tm_skills_wrap">
         <div className="container">
-          <div className="inner_wrap">
-            <div className="leftbox">
-              <div className="arlo_tm_mini_title_holder">
-                <h4>Some About my Abilities</h4>
-              </div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since. Lorem Ipsum has been the industry. Lorem Ipsum
-                has been the industry's standard dummy text since. Lorem Ipsum
-                is simply.
-              </p>
-            </div>
-            <div className="rightbox">
-              <div className="progress_bar_wrap_total">
-                <div
-                  className="arlo_tm_progress_wrap"
-                  data-size="small"
-                  data-round="c"
-                  data-strip="off"
-                >
-                  <div
-                    // className="arlo_tm_progress"
-                    // data-value="95"
-                    // data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        Wordpress -{" "}
-                        <span className="experience">
-                          5 years of experience
-                        </span>
-                      </span>
-                      <span className="number">95%</span>
-                    </span>
-                    <div className="arlo_tm_bar_bg">
-                      <div className="arlo_tm_bar_wrap">
-                        <ProgressBar completed={60} />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="85"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        Css -{" "}
-                        <span className="experience">
-                          3 years of experience
-                        </span>
-                      </span>
-                      <span className="number">85%</span>
-                    </span>
-                    <div className="arlo_tm_bar_bg">
-                      <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="75"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        HTML -{" "}
-                        <span className="experience">
-                          4 years of experience
-                        </span>
-                      </span>
-                      <span className="number">75%</span>
-                    </span>
-                    <div className="arlo_tm_bar_bg">
-                      <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="90"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        After Effect -{" "}
-                        <span className="experience">
-                          6 years of experience
-                        </span>
-                      </span>
-                      <span className="number">90%</span>
-                    </span>
-                    <div className="arlo_tm_bar_bg">
-                      <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="arlo_tm_title_holder">
+            <h3>SKILLS</h3>
+            <span>About my skills</span>
           </div>
-        </div>
-
-        <div className="container">
           <div className="inner_wrap">
             <div className="leftbox">
               <div className="arlo_tm_mini_title_holder">
-                <h4>Some About my Abilities</h4>
+                <h4>Web Development Skills</h4>
               </div>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since. Lorem Ipsum has been the industry. Lorem Ipsum
-                has been the industry's standard dummy text since. Lorem Ipsum
-                is simply.
+                Proficient in HTML, CSS, and JavaScript for creating dynamic and
+                engaging user interfaces. Experienced with popular frameworks
+                such as React.js, Next.js, and Vue.js. Skilled in using Figma
+                for UI/UX design.
+                <span style={{ marginBottom: "20px", display: "block" }}></span>
+                Experienced in Laravel and Node.js, with an emphasis on
+                Express.js for developing strong server-side apps and APIs.
+                Experienced with both relational (PostgreSQL) and noSQL
+                (MongoDB) databases.
               </p>
             </div>
             <div className="rightbox">
@@ -134,83 +34,159 @@ function Skills() {
                   data-round="c"
                   data-strip="off"
                 >
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="95"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        Wordpress -{" "}
-                        <span className="experience">
-                          5 years of experience
-                        </span>
-                      </span>
-                      <span className="number">95%</span>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">HTML/ CSS/ JavaScript </span>
+                      <span className="number">80%</span>
                     </span>
                     <div className="arlo_tm_bar_bg">
                       <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={80}
+                        />
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="85"
-                    data-color="#000"
-                  >
-                    <span>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
                       <span className="label">
-                        Css -{" "}
-                        <span className="experience">
-                          3 years of experience
-                        </span>
+                        React JS / Next JS (Typescript)
                       </span>
                       <span className="number">85%</span>
                     </span>
                     <div className="arlo_tm_bar_bg">
                       <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={80}
+                        />
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="75"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        HTML -{" "}
-                        <span className="experience">
-                          4 years of experience
-                        </span>
-                      </span>
-                      <span className="number">75%</span>
-                    </span>
-                    <div className="arlo_tm_bar_bg">
-                      <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="arlo_tm_progress"
-                    data-value="90"
-                    data-color="#000"
-                  >
-                    <span>
-                      <span className="label">
-                        After Effect -{" "}
-                        <span className="experience">
-                          6 years of experience
-                        </span>
-                      </span>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">Vue JS</span>
                       <span className="number">90%</span>
                     </span>
                     <div className="arlo_tm_bar_bg">
                       <div className="arlo_tm_bar_wrap">
-                        <div className="arlo_tm_bar"></div>
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={90}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">Figma Desgin </span>
+                      <span className="number">75%</span>
+                    </span>
+                    <div className="arlo_tm_bar_bg">
+                      <div className="arlo_tm_bar_wrap">
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={75}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">Laravel (PHP)</span>
+                      <span className="number">90%</span>
+                    </span>
+                    <div className="arlo_tm_bar_bg">
+                      <div className="arlo_tm_bar_wrap">
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={90}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">NodeJS / Express JS </span>
+                      <span className="number">70%</span>
+                    </span>
+                    <div className="arlo_tm_bar_bg">
+                      <div className="arlo_tm_bar_wrap">
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={70}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginBottom: "10px" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span className="label">Database Postgres / MongoDB</span>
+                      <span className="number">85%</span>
+                    </span>
+                    <div className="arlo_tm_bar_bg">
+                      <div className="arlo_tm_bar_wrap">
+                        <ProgressBar
+                          bgColor={"#333"}
+                          height="8px"
+                          isLabelVisible={false}
+                          completed={85}
+                        />
                       </div>
                     </div>
                   </div>
