@@ -1,4 +1,5 @@
 import desktopLogo from "@/assets/img/about/huy.jpeg";
+import { useState } from "react";
 
 interface IProps {
   hideLeftpart: boolean;
@@ -6,6 +7,16 @@ interface IProps {
 }
 
 function Leftpart(props: IProps) {
+  const [activeTab, setActiveTab] = useState<string>("home");
+
+  const handleClickTab = (tab: string, event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    event.preventDefault();
+    setActiveTab(tab);
+    const section = document.querySelector(`#${tab}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
   return (
     <div
       className={
@@ -27,19 +38,19 @@ function Leftpart(props: IProps) {
         <div className="menu_list_wrap">
           <ul className="anchor_nav">
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleClickTab('home', event)}>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" className={activeTab === 'about' ? 'active' : ''} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleClickTab('about', event)}>About</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" className={activeTab === 'skills' ? 'active' : ''} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleClickTab('skills', event)}>Skills</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" className={activeTab === 'projects' ? 'active' : ''} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleClickTab('projects', event)}>Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className={activeTab === 'contact' ? 'active' : ''} onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => handleClickTab('contact', event)}>Contact</a>
             </li>
           </ul>
         </div>

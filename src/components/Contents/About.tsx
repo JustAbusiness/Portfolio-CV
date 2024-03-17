@@ -1,7 +1,9 @@
 import myCV from '@/assets/CV-Pham-Ngoc-Huy (1).docx.pdf'
 import AboutAvatar from '@/assets/img/about/mybg.jpeg'
+import { useState } from 'react';
 
 function About() {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div>
       <div className="arlo_tm_section relative" id="about" style={{paddingTop: '100px'}}>
@@ -14,7 +16,8 @@ function About() {
             <div className="arlo_tm_about_wrap">
               <div className="author_wrap">
                 <div className="leftbox">
-                <img src={AboutAvatar} alt="550x640" style={{width: '550px', height: '450px', borderRadius: '2%', objectFit: 'cover'}} />
+                <img src={AboutAvatar} alt="550x640" style={{width: '550px', height: '450px', borderRadius: '2%', objectFit: 'cover', 
+                 transform: isHovered ? 'scale(1.1)' : 'scale(1)',  transition: 'transform 0.3s ease' }} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} />
                   <div
                     className="about_image_wrap parallax"
                     data-relative-input="true"
