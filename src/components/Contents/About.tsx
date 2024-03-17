@@ -4,7 +4,7 @@ import AboutAvatar from '@/assets/img/about/mybg.jpeg'
 function About() {
   return (
     <div>
-      <div className="arlo_tm_section relative" id="about">
+      <div className="arlo_tm_section relative" id="about" style={{paddingTop: '100px'}}>
         <div className="arlo_tm_about_wrapper_all">
           <div className="container">
             <div className="arlo_tm_title_holder">
